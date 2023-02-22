@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Image Uploading with Vue + Laravel</title>
+    <meta name="csrf_token" content="{{ csrf_token() }}">
 
     @vite('resources/css/app.css')
 </head>
