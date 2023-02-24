@@ -4,33 +4,33 @@
 
 #### First time Setup
 
+Clone the repository to your device and cd into it
 ``` bash 
-# Clone the repository to your device and cd into it
 git clone https://github.com/Ismail020/advanced-image-uploader.git && cd "$(basename "$_" .git)"
 ```
 
+Copy the .env.example and change the copied file name to .env
 ```bash
-# Copy the .env.example and change the copied file name to .env
 cp .env.example .env
 ```
 
+Install composer packages with
 ```bash
-# Install composer packages with
 composer install
 ```
 
+Generate an app key (dont use on production or staging)
 ```bash
-# Generate an app key (dont use on production or staging)
 php artisan key:generate
 ```
 
+Link the storage
 ```bash
-# Link the storage
 php artisan storage:link
 ```
 
+Add a local database matching DB_DATABASE in .env — default: 'image_uploader'
 ```bash
-#Add a local database matching DB_DATABASE in .env — default: 'image_uploader'
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -39,12 +39,12 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
+Migrate and seed the tables to your database
 ```bash
-# Migrate and seed the tables to your database
 php artisan migrate:fresh --seed
 ```
 
+Start Environment
 ```bash
-# Start Environment
 php artisan serve
 ```
