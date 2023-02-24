@@ -49,6 +49,11 @@ Start environment
 php artisan serve
 ```
 
+Install the plugin vue package
+```bash
+npm install --save-dev @vitejs/plugin-vue
+```
+
 Start the development server
 ```bash
 npm run dev
