@@ -1,8 +1,8 @@
 # Advanced image uploader
 
-## Setup For local development
+## Setup for local development
 
-### First time Setup
+### First time setup
 
 Clone the repository to your device and cd into it
 ``` bash 
@@ -44,7 +44,12 @@ Migrate and seed the tables to your database
 php artisan migrate:fresh --seed
 ```
 
-Start Environment
+Start environment
 ```bash
 php artisan serve
+```
+
+Start the development server
+```bash
+npm run dev
 ```
