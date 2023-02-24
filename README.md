@@ -1,8 +1,8 @@
 # Advanced image uploader
 
-### Setup For local development
+## Setup For local development
 
-#### First time Setup
+### First time Setup
 
 Clone the repository to your device and cd into it
 ``` bash 
